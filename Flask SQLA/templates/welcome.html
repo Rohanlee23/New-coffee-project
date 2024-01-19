@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beans and Brew</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<style>
+  body {
+  background-color: rgb(235, 177, 52);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+<body>
+            <div class="header">
+                <h1>Bean & Brew</h1>
+                <p>Welcome</p>
+            </div>
+   <script>
+    </script>
+      <h3>Menu</h3>
+      <table>
+        <tr>
+         </tr>
+         {%for food in food%}
+            <tr>
+                <td>
+                      <a href="javascript:window.open('{{url_for('menu', type = food.food_name)}}', 'width=20,height=50', left=400, top =10);">{{food.food_name}}</a> <br>
+
+                </td>
+            </tr>
+          <tr>
+        </tr>
+          {%endfor%}
+          <tr></tr>
+          <tr>
+          <td>
+          <a href="{{url_for('logout')}}">Checkout</a><br> <br>
+            <a href="{{url_for('create')}}">Add New Food</a>
+          </td>
+          </tr>
+      </table>
+  </body>
+</html>

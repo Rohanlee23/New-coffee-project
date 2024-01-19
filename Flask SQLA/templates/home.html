@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Beans And Brew</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+   
+            <div class="header">
+               <div class = "text">
+               
+                <h1 href="#" class="logo"> <i class="fa-solid fa-bread-slice"></i> <u>Bean And Brew</u></h1>
+               </div>
+                 <h4>Indulge in the rich and robust flavors of our coffee. 
+                <br>Crafted with meticulous care using only the finest all- natural ingredients</h4> <br>
+            
+            </div>
+         <br>
+        
+       
+       
+        <div class="container">
+            <img src="Pictures/Coffee1.jpg" width="500">
+
+        <div><button><a href="{{url_for('welcome')}}">Order As a Guest</a></button><br> <br></div>
+        <div><button><a href="{{url_for('login')}}">Login</a></button> <br> <br></div>
+        <div><button><a href="{{url_for('register')}}">Create an account to buy</a></button> <br> <br></div>
+        <div><button><a href="{{url_for('register')}}">Restaurant space booking</a></button> <br><br></div>
+        <div><button><a href="{{url_for('register')}}">Book baking lessons</a></button> <br></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beans and Brew</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<style>
+    body {
+  background-color: rgb(231, 172, 46);
+}
+
+h1 {
+  color: rgb(3, 3, 3);
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+ h1{
+  font-size: 40px;
+}
+</style>
+
+    
+    </body>
+    <title> <href="#" class="logo"> <i class="fa-solid fa-bread-slice"></i> welcome </title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body>
+            <div class="header">
+                <h1><u>Bean And Brew</u></h1>
+                <p>Log In into your account </p>
+            </div>
+    <form action="/login" method="POST">
+        <p>Enter Username:</p>
+        <p><input type="text" name="username" /></p>
+        <p>Enter Password:</p>
+        <p><input type="password" name="password" /></p>
+
+        <p><input type="submit" value="Submit" /></p>
+
+        <button><a href="{{url_for('register')}}">Register</a></button>
+</form>
+</body>
+</html>
